@@ -105,7 +105,7 @@ class UnoGame(var numberPlayers: Int){
                 if (deck.size < 2){
                     addStackToDeck()                                                                // * fügt dass den Stack zum Deck hinzu, wenn weniger als 2 Karten in dem Deck sind.
                 }
-                playerHand.addAll((currentCard as DrawTwoCard).drawTwo(deck))                        // ! IntelliJ hat mir das so als Lösung vorgeschlagen lol. Fehlerhaft. Karten werden vom Deck entfernt, aber nicht auf die Hand hinzugefügt
+                playerHand.addAll((currentCard as DrawTwoCard).drawTwo(deck))                        // ! IntelliJ hat mir das so als Lösung vorgeschlagen lol (Smartcast). Fehlerhaft. Karten werden vom Deck entfernt, aber nicht auf die Hand hinzugefügt
                 println()
             }
 
